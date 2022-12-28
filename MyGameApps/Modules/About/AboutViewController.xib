@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="MyGameApps" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="1cO-NV-lXb" id="kCr-6I-aQa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-image" translatesAutoresizingMaskIntoConstraints="NO" id="oqV-cu-PuR">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Nx4-eg-uMh"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyb-aY-rfF">
+                    <rect key="frame" x="15.999999999999996" y="63" width="61.666666666666657" height="34.333333333333343"/>
+                    <color key="tintColor" name="PrimaryColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Back">
+                        <color key="baseBackgroundColor" name="PrimaryColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="backPressed:" destination="-1" eventType="touchUpInside" id="G7L-3i-elZ"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_profile" translatesAutoresizingMaskIntoConstraints="NO" id="Lfj-hX-aUi">
+                    <rect key="frame" x="16" y="140" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="bnf-Lv-cgQ"/>
+                        <constraint firstAttribute="width" constant="100" id="wco-ml-z6Q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dTp-Q0-8m0">
+                    <rect key="frame" x="16" y="256" width="358" height="112"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JPm-IJ-DNg">
+                            <rect key="frame" x="0.0" y="0.0" width="358" height="37.666666666666664"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didin Amarudin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td0-bo-btM">
+                                    <rect key="frame" x="0.0" y="0.0" width="358" height="19.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS and Flutter Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxc-LY-X4U">
+                                    <rect key="frame" x="0.0" y="23.333333333333314" width="358" height="14.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cO-NV-lXb">
+                            <rect key="frame" x="0.0" y="49.666666666666686" width="358" height="62.333333333333343"/>
+                            <string key="text">I am a mobile developer with a strong passion for learning new things, I am familiar with cross-platform mobile development using flutter, android native using java, and iOS native using swift</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oqV-cu-PuR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0vg-C2-AIh"/>
+                <constraint firstItem="dTp-Q0-8m0" firstAttribute="top" secondItem="Lfj-hX-aUi" secondAttribute="bottom" constant="16" id="J8O-uv-LnI"/>
+                <constraint firstItem="Lfj-hX-aUi" firstAttribute="bottom" secondItem="oqV-cu-PuR" secondAttribute="bottom" constant="40" id="LiZ-v7-8nb"/>
+                <constraint firstItem="dTp-Q0-8m0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="NXv-By-qhm"/>
+                <constraint firstItem="oqV-cu-PuR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QL8-t8-soJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dTp-Q0-8m0" secondAttribute="trailing" constant="16" id="QNf-gg-09r"/>
+                <constraint firstItem="Lyb-aY-rfF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="jZx-fl-wbg"/>
+                <constraint firstItem="Lfj-hX-aUi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mUv-rs-SJp"/>
+                <constraint firstItem="Lyb-aY-rfF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="qIK-06-g0a"/>
+                <constraint firstItem="oqV-cu-PuR" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="rau-dT-ial"/>
+            </constraints>
+            <point key="canvasLocation" x="80" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-image" width="640" height="963"/>
+        <image name="img_profile" width="750" height="750"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.94509803921568625" green="0.10588235294117647" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
