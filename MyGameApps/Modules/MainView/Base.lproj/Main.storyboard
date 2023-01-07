@@ -18,39 +18,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="XCr-5d-Ljj">
-                                <rect key="frame" x="16" y="83" width="398" height="25.666666666666671"/>
+                                <rect key="frame" x="15.999999999999993" y="83" width="127.33333333333331" height="23"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmS-Ab-iNF">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.33333333333333" height="25.666666666666668"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyGames" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-fD-kL6">
-                                                <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="25.666666666666668"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <color key="textColor" name="PrimaryColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMx-N2-GYD">
-                                                <rect key="frame" x="90.333333333333329" y="0.0" width="37" height="25.666666666666668"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o36-pD-1Me">
-                                        <rect key="frame" x="372.33333333333331" y="0.0" width="25.666666666666686" height="25.666666666666668"/>
-                                        <color key="tintColor" name="PrimaryColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="person.circle" catalog="system">
-                                            <color key="titleColor" name="PrimaryColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="profileButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eG-aM-36g"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyGames" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-fD-kL6">
+                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMx-N2-GYD">
+                                        <rect key="frame" x="90.333333333333329" y="0.0" width="37" height="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skK-Qb-tKM">
+                                <rect key="frame" x="388.33333333333331" y="83" width="25.666666666666686" height="25.666666666666671"/>
+                                <color key="tintColor" name="PrimaryColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="person.circle" catalog="system">
+                                    <color key="titleColor" name="PrimaryColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="profileButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Os4-Mv-hDa"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eY-Kc-Vdu">
-                                <rect key="frame" x="0.0" y="116.66666666666669" width="430" height="815.33333333333326"/>
+                                <rect key="frame" x="0.0" y="114" width="430" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HA-sU-0a8">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="882"/>
@@ -103,7 +98,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="H8Y-CD-4Dk">
-                                                        <rect key="frame" x="0.0" y="379.33333333333337" width="430" height="231.33333333333337"/>
+                                                        <rect key="frame" x="0.0" y="379.33333333333331" width="430" height="231.33333333333331"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arcade Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfJ-id-4vu">
                                                                 <rect key="frame" x="16" y="0.0" width="398" height="19.333333333333332"/>
@@ -111,7 +106,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dwz-hi-K6h">
-                                                                <rect key="frame" x="0.0" y="31.333333333333371" width="430" height="200"/>
+                                                                <rect key="frame" x="0.0" y="31.333333333333314" width="430" height="200"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="200" id="Xks-0X-xvi"/>
@@ -133,7 +128,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qF4-M2-lEQ">
-                                                        <rect key="frame" x="0.0" y="634.66666666666674" width="430" height="231.33333333333337"/>
+                                                        <rect key="frame" x="0.0" y="634.66666666666663" width="430" height="231.33333333333337"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indie Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLR-L6-yAs">
                                                                 <rect key="frame" x="16" y="0.0" width="398" height="19.333333333333332"/>
@@ -141,7 +136,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="X4c-lC-RNr">
-                                                                <rect key="frame" x="0.0" y="31.333333333333258" width="430" height="200"/>
+                                                                <rect key="frame" x="0.0" y="31.333333333333371" width="430" height="200"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="200" id="Vx4-TG-G5Y"/>
@@ -188,6 +183,18 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="aGc-Z2-oYg"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Hgt-TO-MOw"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbu-oA-txX">
+                                <rect key="frame" x="349.66666666666669" y="83" width="26.666666666666686" height="23.666666666666671"/>
+                                <color key="tintColor" name="PrimaryColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="heart" catalog="system">
+                                    <color key="titleColor" name="PrimaryColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="favoriteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmx-An-c5W"/>
+                                    <action selector="profileButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bp-zM-9ou"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -196,8 +203,11 @@
                             <constraint firstItem="XCr-5d-Ljj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="KAB-qO-POf"/>
                             <constraint firstItem="XCr-5d-Ljj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WFN-nP-3bh"/>
                             <constraint firstAttribute="bottom" secondItem="8eY-Kc-Vdu" secondAttribute="bottom" id="XG1-ya-hQX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="skK-Qb-tKM" secondAttribute="trailing" constant="16" id="cYe-6A-Fow"/>
                             <constraint firstItem="8eY-Kc-Vdu" firstAttribute="top" secondItem="XCr-5d-Ljj" secondAttribute="bottom" constant="8" symbolic="YES" id="iZj-SO-j5M"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XCr-5d-Ljj" secondAttribute="trailing" constant="16" id="og7-Ni-cZR"/>
+                            <constraint firstItem="skK-Qb-tKM" firstAttribute="leading" secondItem="qbu-oA-txX" secondAttribute="trailing" constant="12" id="lj2-s9-ZsG"/>
+                            <constraint firstItem="qbu-oA-txX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="n7M-Hh-orF"/>
+                            <constraint firstItem="skK-Qb-tKM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="xjZ-jX-HZi"/>
                             <constraint firstItem="8eY-Kc-Vdu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zKS-EU-ali"/>
                         </constraints>
                     </view>
@@ -214,6 +224,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <namedColor name="PrimaryColor">
             <color red="0.94509803921568625" green="0.10588235294117647" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

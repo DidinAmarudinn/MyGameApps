@@ -61,6 +61,13 @@ class ViewController: UIViewController {
         nv.modalPresentationStyle = .fullScreen
         self.present(nv, animated: true, completion: nil)
     }
+    
+    @IBAction func favoriteButtonPressed(_ sender: UIButton) {
+        let vc = FavoriteGamesViewController()
+        let nv = UINavigationController(rootViewController: vc)
+        nv.modalPresentationStyle = .fullScreen
+        self.present(nv, animated: true, completion: nil)
+    }
     private func didFinishedGetGames(_ data: GameResponses?, _ error: String?) {
         if let error = error {
             DispatchQueue.main.async {

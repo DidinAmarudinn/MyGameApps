@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct GameResponses: Codable {
     let results: [Game]?
 }
